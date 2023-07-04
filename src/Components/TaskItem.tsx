@@ -21,7 +21,6 @@ const TaskItem: React.FC<TaskProps> = ({ id, title, completed, onDelete, onToggl
     return (
         <div className={`task ${completed ? 'completed': ''}`}>
                 <input type="checkbox" checked={completed} onChange={handleToggle} />
-
                 <span>{title}</span>
                 <button onClick={handleDelete} >Delete</button>
         </div>
