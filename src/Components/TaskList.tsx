@@ -1,17 +1,9 @@
 import React from "react";
 import TaskItem from "./TaskItem";
+import { TaskListProps } from "../utils/interface";
 
-interface Task {
-  id: number;
-  title: string;
-  completed: boolean;
-}
 
-interface TaskListProps {
-  tasks: Task[];
-  onDelete: (id: number) => void;
-  onToggle: (id: number) => void;
-}
+
 
 const TaskList: React.FC<TaskListProps> = ({ tasks, onDelete, onToggle }) => {
   return (

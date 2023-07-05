@@ -1,13 +1,5 @@
 import React from 'react'
-
-
-interface TaskProps {
-    id: number;
-    title: string;
-    completed: boolean;
-    onDelete: (id: number) => void;
-    onToggle: (id: number) => void;
-}
+import { TaskProps } from '../utils/interface';
 
 const TaskItem: React.FC<TaskProps> = ({ id, title, completed, onDelete, onToggle }) => {
     const handleDelete = () => {

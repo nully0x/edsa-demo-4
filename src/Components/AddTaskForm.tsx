@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
+import { AddTaskFormProps } from '../utils/interface';
 
-interface AddTaskFormProps {
-    onAdd: (title: string) => void;
-}
 
 const AddTaskForm: React.FC<AddTaskFormProps> = ({onAdd}) => {
     const [title, setTitle] = useState('');
